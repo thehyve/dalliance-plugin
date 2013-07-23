@@ -30,22 +30,26 @@ Browser.prototype.currentlyActive = function(source) {
 }
 
 Browser.prototype.makeButton = function(name, tooltip) {
-    var regButton = makeElement('a', name, {href: '#'});
+    var regButton = makeElement('span', name);
+    regButton.style.backgroundColor = 'rgb(230,230,250)';
+    regButton.style.borderStyle = 'solid';
+    regButton.style.borderColor = 'red';
+    regButton.style.borderWidth = '3px';
+    regButton.style.padding = '4px';
+    regButton.style.marginLeft = '10px';
+    regButton.style.marginRight = '10px';
+    // regButton.style.width = '100px';
+    regButton.style['float'] = 'left';
     if (tooltip) {
         this.makeTooltip(regButton, tooltip);
     }
-    return makeElement('li', regButton);
+    return regButton;
 }
 
 function activateButton(addModeButtons, which) {
     for (var i = 0; i < addModeButtons.length; ++i) {
         var b = addModeButtons[i];
-        // HACK classList needs a polyfill for IE<10.
-        if (b === which) {
-            b.classList.add('active');
-        } else {
-            b.classList.remove('active');
-        }
+        b.style.borderColor = (b == which) ? 'red' : 'blue';
     }
 }
 
@@ -55,8 +59,8 @@ Browser.prototype.showTrackAdder = function(ev) {
     mx +=  document.documentElement.scrollLeft || document.body.scrollLeft;
     my +=  document.documentElement.scrollTop || document.body.scrollTop;
 
-    var popup = makeElement('div');
-    popup.appendChild(makeElement('div', null));
+    var popup = document.createElement('div');
+    popup.appendChild(makeElement('div', null, {}, {clear: 'both', height: '10px'})); // HACK only way I've found of adding appropriate spacing in Gecko.
 
     var addModeButtons = [];
     var makeStab, makeStabObserver;
@@ -66,7 +70,7 @@ Browser.prototype.showTrackAdder = function(ev) {
         var mf  = function(mm) {
             var mapButton = thisB.makeButton(thisB.chains[mm].srcTag, 'Browse datasources mapped from ' + thisB.chains[mm].srcTag);
             addModeButtons.push(mapButton);
-            mapButton.addEventListener('click', function(ev) {
+            mapButton.addEventListener('mousedown', function(ev) {
                 ev.preventDefault(); ev.stopPropagation();
                 activateButton(addModeButtons, mapButton);
                 makeStab(thisB.mappableSources[mm], mm);
@@ -80,7 +84,7 @@ Browser.prototype.showTrackAdder = function(ev) {
     var binButton = this.makeButton('Binary', 'Add data in bigwig or bigbed format');
     addModeButtons.push(binButton);
     activateButton(addModeButtons, regButton);
-    popup.appendChild(makeElement('ul', addModeButtons, {className: 'nav nav-tabs'}));
+    popup.appendChild(makeElement('div', addModeButtons), null);
     
     popup.appendChild(makeElement('div', null, {}, {clear: 'both', height: '10px'})); // HACK only way I've found of adding appropriate spacing in Gecko.
     
@@ -113,6 +117,7 @@ Browser.prototype.showTrackAdder = function(ev) {
         __mapping = mapping;
         __sourceHolder = msources;
         __sourceHolder.addListenerAndFire(makeStabObserver);
+       
     }
 
     makeStabObserver = function(msources) {
@@ -174,17 +179,18 @@ Browser.prototype.showTrackAdder = function(ev) {
     };
     
 
-    regButton.addEventListener('click', function(ev) {
+    regButton.addEventListener('mousedown', function(ev) {
         ev.preventDefault(); ev.stopPropagation();
         activateButton(addModeButtons, regButton);
         makeStab(thisB.availableSources);
     }, false);
-    defButton.addEventListener('click', function(ev) {
+    defButton.addEventListener('mousedown', function(ev) {
         ev.preventDefault(); ev.stopPropagation();
         activateButton(addModeButtons, defButton);
         makeStab(new Observed(thisB.defaultSources));
     }, false);
-    binButton.addEventListener('click', function(ev) {
+
+    binButton.addEventListener('mousedown', function(ev) {
         ev.preventDefault(); ev.stopPropagation();
         activateButton(addModeButtons, binButton);
         switchToBinMode();
@@ -222,7 +228,7 @@ Browser.prototype.showTrackAdder = function(ev) {
         
     }
 
-    custButton.addEventListener('click', function(ev) {
+    custButton.addEventListener('mousedown', function(ev) {
         ev.preventDefault(); ev.stopPropagation();
         activateButton(addModeButtons, custButton);
         switchToCustomMode();
@@ -251,8 +257,17 @@ Browser.prototype.showTrackAdder = function(ev) {
 
 
 
-    var addButton = makeElement('button', 'Add', {className: 'btn btn-primary'});
-    addButton.addEventListener('click', function(ev) {
+    var addButton = document.createElement('span');
+    addButton.style.backgroundColor = 'rgb(230,230,250)';
+    addButton.style.borderStyle = 'solid';
+    addButton.style.borderColor = 'blue';
+    addButton.style.borderWidth = '3px';
+    addButton.style.padding = '2px';
+    addButton.style.margin = '10px';
+    addButton.style.width = '150px';
+    // addButton.style.float = 'left';
+    addButton.appendChild(document.createTextNode('Add'));
+    addButton.addEventListener('mousedown', function(ev) {
         ev.stopPropagation(); ev.preventDefault();
         doAdd();
     }, false);
@@ -313,7 +328,7 @@ Browser.prototype.showTrackAdder = function(ev) {
 
                 thisB.sources.push(dataToFinalize);
                 thisB.makeTier(dataToFinalize);
-                //thisB.storeStatus();
+                thisB.storeStatus();
                 thisB.removeAllPopups();
             }
         } else {
@@ -323,7 +338,7 @@ Browser.prototype.showTrackAdder = function(ev) {
                     var nds = b.dalliance_source;
                     thisB.sources.push(nds);
                     thisB.makeTier(nds);
-                    // thisB.storeStatus();
+                    thisB.storeStatus();
                 }
             }
             thisB.removeAllPopups();
@@ -559,12 +574,12 @@ Browser.prototype.showTrackAdder = function(ev) {
         stabHolder.appendChild(custName);
 
 
-        // stabHolder.appendChild(document.createTextNode('User: '));
+        stabHolder.appendChild(document.createTextNode('User: '));
         custUser = makeElement('input', '');
-        // stabHolder.appendChild(custUser);
-        //stabHolder.appendChild(document.createTextNode('Pass: '));
+        stabHolder.appendChild(custUser);
+        stabHolder.appendChild(document.createTextNode('Pass: '));
         custPass = makeElement('input', '');
-        // stabHolder.appendChild(custPass);
+        stabHolder.appendChild(custPass);
         
 
         stabHolder.appendChild(makeElement('br'));
@@ -612,30 +627,41 @@ Browser.prototype.showTrackAdder = function(ev) {
     }
 
 
-    var canButton = makeElement('button', 'Cancel', {className: 'btn'});
-    canButton.addEventListener('click', function(ev) {
+    var canButton = document.createElement('span');
+    canButton.style.backgroundColor = 'rgb(230,230,250)';
+    canButton.style.borderStyle = 'solid';
+    canButton.style.borderColor = 'blue';
+    canButton.style.borderWidth = '3px';
+    canButton.style.padding = '2px';
+    canButton.style.margin = '10px';
+    canButton.style.width = '150px';
+    // canButton.style.float = 'left';
+    canButton.appendChild(document.createTextNode('Cancel'))
+    canButton.addEventListener('mousedown', function(ev) {
         ev.stopPropagation(); ev.preventDefault();
         thisB.removeAllPopups();
     }, false);
 
-    var refreshButton = makeElement('button', 'Refresh', {className: 'btn'});
-    refreshButton.addEventListener('click', function(ev) {
+    var refreshButton = makeElement('span', 'Refresh');
+    refreshButton.style.backgroundColor = 'rgb(230,230,250)';
+    refreshButton.style.borderStyle = 'solid';
+    refreshButton.style.borderColor = 'blue';
+    refreshButton.style.borderWidth = '3px';
+    refreshButton.style.padding = '2px';
+    refreshButton.style.margin = '10px';
+    refreshButton.style.width = '120px';
+    refreshButton.addEventListener('mousedown', function(ev) {
         ev.stopPropagation(); ev.preventDefault();
         thisB.queryRegistry(__mapping);
     }, false);
     this.makeTooltip(refreshButton, 'Click to re-fetch data from the DAS registry');
 
-    var buttonHolder = makeElement('div', [addButton, ' ', canButton, ' ', refreshButton]);
+    var buttonHolder = makeElement('div', [addButton, canButton, refreshButton]);
     buttonHolder.style.margin = '10px';
     asform.appendChild(buttonHolder);
 
     popup.appendChild(asform);
     makeStab(thisB.availableSources);
 
-    this.popit(ev, 'Add DAS data', popup, {width: 500});
-    this.trackAdderVisible = true;
-    popup.addEventListener('DOMNodeRemovedFromDocument', function(ev) {
-        // console.log('track-adder was removed');
-        thisB.trackAdderVisible = false;
-    }, false);
+    return this.popit(ev, 'Add DAS data', popup, {width: 600});
 }

@@ -1,41 +1,19 @@
-For 0.8
+
+For 0.7
 -------
 
-  - Missing UI elements
-     + Per-tier info?
-  - Fix scrolling on newer macs.
-  - Update web site.
-
-For 0.9 (?)
------------
-
-  - True tiled rendering.
-  - UI for next/prev
-  - Undo/redo.
-  - Animate when leaping.
-  - Cleaner separation between genome canvases and UI chrome.
-  - Track-hub support
-  - VCF+Tabix support
-     - Anything else in Tabix envelopes?  GFF?  BED?
-  - Small BED/WIG support
-  - Stylesheet editor.
+  - Evaluate canvas rendering (requires 2-stage layout)
+  - If we stick to SVG rendering, implement incremental layout.
+  - Move fetching/mapping/etc to a webworker.
+  - If we swtich to 2-stage layout, can we do bumping &c in a worker as well?
+  - Next/prev feature.
+  - Try touch support again.
+  - Cross-index manually added sources to the registry.
   - Out-to-chromosome zooming
-    + Probably needs a better set of semantic zoom hints in the
-      stylesheet language.  
-  - Refactor next/prev support in big* code.
-  - next/prev peak support for quantitative tracks
-    + Needs a UI for setting thresholds.
-  - Incremental data fetching
-  - Work out the kinks in security/preflighting.
-  - Chromosome overviews
-  - Tracks via Ensembl-REST?
-  - Try to preserve layout when expanding/collapsing variants.
-  - Abbreviations when typing locations.
-  - Construct as a web-component.
-  - History of recently-viewed tracks.
-  - Better control of vertical resize.
+  - Strand-flipping
+  - Fetch-pools.
  
-Future
+Real Soon Now
 -------------
 
  - Better configuration of quantitative tracks.
@@ -48,7 +26,6 @@ Future
  - Better dialogs.
  - Improved karyoscape.
  - Factor out browser tiers from UI chrome.
- - Consider JSON-DAS -- is this alive???
 
 Nice to have
 ------------
@@ -58,6 +35,8 @@ Nice to have
      + Any reason not to just hack the server to do this?
      + Suggest-as-you-type?
      + Does new DAS search proposal help?
+ - Tourist mode: fast movement between POIs 
+     + (how close is this to next/prev feature?)
  - State persistance between sessions
      + Add a "make URL" button?
  - Tier groups

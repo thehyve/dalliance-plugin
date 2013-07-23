@@ -32,7 +32,7 @@ dallianceBrowser = new Ext.Panel(
                     chr:          '22',
                     viewStart:    30000000,
                     viewEnd:      30030000,
-                    cookieKey:    'human2',
+                    cookieKey:    'human',
 
                     chains: {
                         hg19ToHg18: new Chainset('http://www.derkholm.net:8080/das/hg19ToHg18/', 'GRCh37', 'NCBI36',
@@ -45,29 +45,25 @@ dallianceBrowser = new Ext.Panel(
                     },
 
                     sources:     [{name:                 'Genome',
-                        twoBitURI:            'http://www.biodalliance.org/datasets/hg18.2bit',
-                        // uri:                  'http://www.derkholm.net:8080/das/hsa_54_36p/',
-                        tier_type:            'sequence'},
+                        uri:                  'http://www.derkholm.net:8080/das/hg18comp/',
+                        tier_type:            'sequence',
+                        provides_entrypoints: true},
+                        {name:                 'TwoBitSeq',
+                            twoBitURI:            'http://www.biodalliance.org/datasets/hg18.2bit',
+                            tier_type:            'sequence'},
                         {name:                 'Genes',
                             desc:                 'Gene structures from Ensembl 54',
                             uri:                  'http://www.derkholm.net:8080/das/hsa_54_36p/',
                             collapseSuperGroups:  true,
                             provides_karyotype:   true,
                             provides_search:      true,
-                            provides_entrypoints: true,
                             maxbins:              false},
                         {name:                 'Repeats',
                             uri:                  'http://www.derkholm.net:8080/das/hsa_54_36p/',
                             stylesheet_uri:       'http://www.biodalliance.org/stylesheets/repeats-L1.xml'},
                         {name:                 'CpG Density',
                             uri:                  'http://www.derkholm.net:8080/das/hg18comp/',
-                            // stylesheet_uri:       'http://www.biodalliance.org/stylesheets/cpg-hist.xml',
-                            style:                [{type: 'cpgoe',
-                                style: {glyph: 'LINEPLOT',
-                                    FGCOLOR: 'green', HEIGHT: '50'}}]},
-                        {name: 'MeDIP-raw',
-                            desc: 'MeDIP-seq reads from Nature Biotech. 26:779-785',
-                            uri: 'http://www.derkholm.net:8080/das/medipseq_reads/'},
+                            stylesheet_uri:       'http://www.biodalliance.org/stylesheets/cpg-hist.xml'},
                         {name:                 'BWG test',
                             bwgURI:               'http://www.biodalliance.org/datasets/spermMethylation.bw',
                             stylesheet_uri:       'http://www.ebi.ac.uk/das-srv/genomicdas/das/batman_seq_SP/stylesheet'},
@@ -75,14 +71,7 @@ dallianceBrowser = new Ext.Panel(
                             bwgURI:               'http://www.biodalliance.org/datasets/ensGene.bb',
                             link:                 'http://ncbi36.ensembl.org/Homo_sapiens/Gene/Summary?t=$$',
                             collapseSuperGroups:  true,
-                            disable: true},
-                        {name:                 'Style test',
-                            uri:                  pageInfo.basePath+'/glyph-test/',
-                            features_uri:         pageInfo.basePath+'/glyph-test/features.xml',
-                            stylesheet_uri:       pageInfo.basePath+'/glyph-test/stylesheet.xml'}
-                    ],
-
-                    setDocumentTitle: true,
+                            disable: true}],
 
                     searchEndpoint: new DASSource('http://www.derkholm.net:8080/das/hsa_54_36p/'),
                     browserLinks: {
@@ -91,7 +80,6 @@ dallianceBrowser = new Ext.Panel(
                         Sequence: 'http://www.derkholm.net:8080/das/hg18comp/sequence?segment=${chr}:${start},${end}'
                     }
                 });
-
             }
         },
         collapsible : true

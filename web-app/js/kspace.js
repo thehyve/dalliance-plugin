@@ -64,10 +64,6 @@ KnownSpace.prototype.viewFeatures = function(chr, min, max, scale) {
     if (chr != this.chr) {
         throw "Can't extend Known Space to a new chromosome";
     }
-    if (min < 1) {
-        min = 1;
-    }
-
     this.min = min;
     this.max = max;
     this.scale = scale;
@@ -226,6 +222,7 @@ KnownSpace.prototype.provision = function(tier, chr, min, max, actualScale, want
         var mayDownsample = false;
         var src = tier.getSource();
         while (MappedFeatureSource.prototype.isPrototypeOf(src)) {
+            // dlog('Skipping up...');
             src = src.source;
         }
         if (BWGFeatureSource.prototype.isPrototypeOf(src) || BAMFeatureSource.prototype.isPrototypeOf(src)) {
@@ -288,13 +285,6 @@ DASFeatureSource.prototype.fetch = function(chr, min, max, scale, types, pool, c
 
 function DASSequenceSource(dasSource) {
     this.dasSource = dasSource;
-    this.awaitedEntryPoints = new Awaited();
-
-    var thisB = this;
-    this.dasSource.entryPoints(
-        function(ep) {
-            thisB.awaitedEntryPoints.provide(ep);
-        });
 }
 
 
@@ -310,18 +300,6 @@ DASSequenceSource.prototype.fetch = function(chr, min, max, pool, callback) {
         }
     );
 }
-
-DASSequenceSource.prototype.getSeqInfo = function(chr, cnt) {
-    this.awaitedEntryPoints.await(function(ep) {
-        for (var epi = 0; epi < ep.length; ++epi) {
-            if (ep[epi].name == chr) {
-                return cnt({length: ep[epi].end});
-            }
-        }
-        return cnt();
-    });
-}
-    
 
 function TwoBitSequenceSource(source) {
     var thisB = this;
@@ -350,18 +328,6 @@ TwoBitSequenceSource.prototype.fetch = function(chr, min, max, pool, callback) {
         });
 }
 
-TwoBitSequenceSource.prototype.getSeqInfo = function(chr, cnt) {
-    this.twoBit.await(function(tb) {
-        var seq = tb.getSeq(chr);
-        if (seq) {
-            tb.getSeq(chr).length(function(l) {
-                cnt({length: l});
-            });
-        } else {
-            cnt();
-        }
-    });
-}
 
 DASFeatureSource.prototype.getScales = function() {
     return [];
@@ -495,42 +461,6 @@ BWGFeatureSource.prototype.getScales = function() {
     } else {
         return null;
     }
-}
-
-function BamblrFeatureSource(bamblrSource) {
-    this.bamblr = bamblrSource;
-}
-
-BamblrFeatureSource.prototype.getScales = function() {
-    return [];
-}
-
-BamblrFeatureSource.prototype.fetch = function(chr, min, max, scale, types, pool, callback) {
-    var rez = scale|0;
-    if (rez < 1) {
-        rez = 1;
-    }
-    var url = this.bamblr + '?seq=' + chr + '&min=' + min + '&max=' + max + '&rez=' + rez;
-    new URLFetchable(url).fetch(function(data) {
-        if (data == null) {
-            dlog('failing bamblr');
-            return;
-        } else {
-            var id = new Int32Array(data);
-            var features = [];
-            for (var ri = 0; ri < id.length; ++ri) {
-                var f = new DASFeature();
-                f.min = min + (ri * rez)
-                f.max = f.min + rez - 1;
-                f.segment = chr;
-                f.type = 'bamblr';
-                f.score = id[ri];
-                features.push(f);
-            }
-            callback(null, features, rez);
-            return;
-        }
-    });
 }
 
 function BAMFeatureSource(bamSource, opts) {

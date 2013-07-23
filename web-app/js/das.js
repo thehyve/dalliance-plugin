@@ -93,16 +93,10 @@ DASSource.prototype.entryPoints = function(callback) {
                     var segSize = seg.getAttribute('size');
                     var segMin, segMax;
                     if (segSize) {
-                        segMin = 1; segMax = segSize|0;
+                        segMin = 1; segMax = segSize;
                     } else {
                         segMin = seg.getAttribute('start');
-                        if (segMin) {
-                            segMin |= 0;
-                        }
                         segMax = seg.getAttribute('stop');
-                        if (segMax) {
-                            segMax |= 0;
-                        }
                     }
                     var segDesc = null;
                     if (seg.firstChild) {
@@ -186,12 +180,9 @@ function DASLink(desc, uri) {
 
 DASSource.prototype.features = function(segment, options, callback) {
     options = options || {};
-    var thisB = this;
 
     var dasURI;
-    if (this.features_uri) {
-        dasURI = this.features_uri;
-    } else {
+    if (this.uri.indexOf('http://') == 0) {
         var filters = [];
 
         if (segment) {
@@ -236,7 +227,9 @@ DASSource.prototype.features = function(segment, options, callback) {
         } else {
             callback([], 'No filters specified');
         }
-    } 
+    } else {
+        dasURI = this.uri;
+    }
    
 
     this.doCrossDomainRequest(dasURI, function(responseXML, req) {
@@ -277,23 +270,6 @@ DASSource.prototype.features = function(segment, options, callback) {
                 dasFeature.segment = segmentID;
                 dasFeature.id = feature.getAttribute('id');
                 dasFeature.label = feature.getAttribute('label');
-
-
-/*
-                var childNodes = feature.childNodes;
-                for (var c = 0; c < childNodes.length; ++c) {
-                    var cn = childNodes[c];
-                    if (cn.nodeType == Node.ELEMENT_NODE) {
-                        var key = cn.tagName;
-                        //var val = null;
-                        //if (cn.firstChild) {
-                        //   val = cn.firstChild.nodeValue;
-                        //}
-                        dasFeature[key] = 'x';
-                    }
-                } */
-
-
                 var spos = elementValue(feature, "START");
                 var epos = elementValue(feature, "END");
                 if ((spos|0) > (epos|0)) {
@@ -697,8 +673,6 @@ function dasNotesOf(element)
 function doCrossDomainRequest(url, handler, credentials, custAuth) {
     // TODO: explicit error handlers?
 
-    console.log('url',url);
-
     if (window.XDomainRequest) {
         var req = new XDomainRequest();
         req.onload = function() {
@@ -710,7 +684,6 @@ function doCrossDomainRequest(url, handler, credentials, custAuth) {
         req.open("get", url);
         req.send('');
     } else {
-        var reqStart = Date.now();
         var req = new XMLHttpRequest();
 
         req.onreadystatechange = function() {

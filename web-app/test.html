@@ -1,8 +1,13 @@
-<!DOCTYPE html> 
+<!DOCTYPE html PUBLIC
+	"-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
+	"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg-flat.dtd"> 
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     >
 
 <head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8"/>
 <title>Human NCBI36 :: Dalliance</title> 
 <style>
 body {font-family: 'helvetica'}
@@ -10,13 +15,11 @@ body {font-family: 'helvetica'}
 <script language="javascript" src="js/spans.js"></script>
 <script language="javascript" src="js/utils.js"></script>
 <script language="javascript" src="js/das.js"></script>
-<script language="javascript" src="js/cbrowser.js"></script>
-<script language="javascript" src="js/feature-popup.js"></script>
+<script language="javascript" src="js/browser.js"></script>
 <script language="javascript" src="js/tier.js"></script>
-<script language="javascript" src="js/features.js"></script>
-<script language="javascript" src="js/color.js"></script>
-<script language="javascript" src="js/feature-draw.js"></script>
-<script language="javascript" src="js/sequence-draw.js"></script>
+<script language="javascript" src="js/sequence-tier.js"></script>
+<script language="javascript" src="js/feature-tier.js"></script>
+<script language="javascript" src="js/slider.js"></script>
 <script language="javascript" src="js/domui.js"></script>
 <script language="javascript" src="js/karyoscape.js"></script>
 <script language="javascript" src="js/quant-config.js"></script>
@@ -32,19 +35,14 @@ body {font-family: 'helvetica'}
 <script language="javascript" src="js/bam.js"></script>
 <script language="javascript" src="js/twoBit.js"></script>
 <script language="javascript" src="js/thub.js"></script>
-<script language="javascript" src="js/svg-export.js"></script>
 <script language="javascript" src="jszlib/js/inflate.js"></script>
-<script language="javascript" src="js/browser-ui.js"></script>
-<script language="javascript" src="js/glyphs.js"></script>
-<script language="javascript" src="js/session.js"></script>
-<script language="javascript" src="polyfills/html5slider.js"></script>
 
 <script language="javascript">
   var b = new Browser({
     chr:          '22',
     viewStart:    30000000,
     viewEnd:      30030000,
-    cookieKey:    'human2',
+    cookieKey:    'human',
 
     chains: {
       hg19ToHg18: new Chainset('http://www.derkholm.net:8080/das/hg19ToHg18/', 'GRCh37', 'NCBI36',
@@ -56,30 +54,26 @@ body {font-family: 'helvetica'}
                                })
     },
 
-    sources:     [{name:                 'Genome',
+    sources:     [{name:                 'Genome',      
+                   uri:                  'http://www.derkholm.net:8080/das/hg18comp/',        
+                   tier_type:            'sequence',
+                   provides_entrypoints: true},
+                  {name:                 'TwoBitSeq',      
                    twoBitURI:            'http://www.biodalliance.org/datasets/hg18.2bit',
-                   // uri:                  'http://www.derkholm.net:8080/das/hsa_54_36p/',
                    tier_type:            'sequence'},
-                  {name:                 'Genes',
+                  {name:                 'Genes',     
                    desc:                 'Gene structures from Ensembl 54',
-                   uri:                  'http://www.derkholm.net:8080/das/hsa_54_36p/',
+                   uri:                  'http://www.derkholm.net:8080/das/hsa_54_36p/',      
                    collapseSuperGroups:  true,
                    provides_karyotype:   true,
                    provides_search:      true,
-                   provides_entrypoints: true,
-                   maxbins:              false},
-                  {name:                 'Repeats',
-                   uri:                  'http://www.derkholm.net:8080/das/hsa_54_36p/',
-                   stylesheet_uri:       'http://www.biodalliance.org/stylesheets/repeats-L1.xml'},
-                  {name:                 'CpG Density',
-                   uri:                  'http://www.derkholm.net:8080/das/hg18comp/',
-                   // stylesheet_uri:       'http://www.biodalliance.org/stylesheets/cpg-hist.xml',
-                   style:                [{type: 'cpgoe',
-                                           style: {glyph: 'LINEPLOT',
-                                                   FGCOLOR: 'green', HEIGHT: '50'}}]},
-                    {name: 'MeDIP-raw',
-                     desc: 'MeDIP-seq reads from Nature Biotech. 26:779-785',
-                     uri: 'http://www.derkholm.net:8080/das/medipseq_reads/'},
+                   maxbins:              false}, 
+                  {name:                 'Repeats',     
+                   uri:                  'http://www.derkholm.net:8080/das/hsa_54_36p/',      
+                   stylesheet_uri:       'http://www.biodalliance.org/stylesheets/repeats-L1.xml'}, 
+                  {name:                 'CpG Density', 
+                   uri:                  'http://www.derkholm.net:8080/das/hg18comp/',        
+                   stylesheet_uri:       'http://www.biodalliance.org/stylesheets/cpg-hist.xml'},
                   {name:                 'BWG test',
                    bwgURI:               'http://www.biodalliance.org/datasets/spermMethylation.bw',
                    stylesheet_uri:       'http://www.ebi.ac.uk/das-srv/genomicdas/das/batman_seq_SP/stylesheet'},
@@ -87,14 +81,7 @@ body {font-family: 'helvetica'}
                    bwgURI:               'http://www.biodalliance.org/datasets/ensGene.bb',
                    link:                 'http://ncbi36.ensembl.org/Homo_sapiens/Gene/Summary?t=$$',
                    collapseSuperGroups:  true,
-                   disable: true},
-                  {name:                 'Style test',
-                   uri:                  './glyph-test/',
-                   features_uri:         './glyph-test/features.xml',
-                   stylesheet_uri:       './glyph-test/stylesheet.xml'}
-                ],
-
-    setDocumentTitle: true,
+                   disable: true}],
 
     searchEndpoint: new DASSource('http://www.derkholm.net:8080/das/hsa_54_36p/'),
     browserLinks: {
@@ -107,7 +94,15 @@ body {font-family: 'helvetica'}
 </head>
 
 <body>
-<div id='svgHolder'>Dalliance genome browser goes here.  Unless you have an ancient web browser or something.</div>
+
+<h2>Human NCBI36</h2>
+
+<div id='svgHolder'>
+</div>
+
+<div id="log">
+</div>
+
 </body>
 </html>
 

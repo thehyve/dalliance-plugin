@@ -9,7 +9,7 @@
 
 var __tier_idSeed = 0;
 
-function DasTier(browser, source, viewport, holder, overlay, placard, placardContent)
+function DasTier(browser, source, viewport, background)
 {
     var thisTier = this;
 
@@ -17,10 +17,7 @@ function DasTier(browser, source, viewport, holder, overlay, placard, placardCon
     this.browser = browser;
     this.dasSource = new DASSource(source);
     this.viewport = viewport;
-    this.holder = holder;
-    this.overlay = overlay;
-    this.placard = placard;
-    this.placardContent = placardContent;
+    this.background = background;
     this.req = null;
     this.layoutHeight = 25;
     this.bumped = true; 
@@ -132,7 +129,7 @@ function DasTier(browser, source, viewport, holder, overlay, placard, placardCon
                 thisTier.stylesheet.pushStyle({type: 'density'}, 'medium', densStyle);
 
                 var wigStyle = new DASStyle();
-                wigStyle.glyph = '__SEQUENCE';
+                wigStyle.glyph = 'BOX';
                 wigStyle.FGCOLOR = 'black';
                 wigStyle.BGCOLOR = 'blue'
                 wigStyle.HEIGHT = 8;
@@ -144,21 +141,6 @@ function DasTier(browser, source, viewport, holder, overlay, placard, placardCon
 
                 thisTier.browser.refreshTier(thisTier);
             });
-        }
-    } else if (this.dasSource.bamblrURI) {
-        fs = new BamblrFeatureSource(this.dasSource.bamblrURI);
-
-        if (!this.dasSource.uri && !this.dasSource.stylesheet_uri) {
-            thisTier.stylesheet = new DASStylesheet();
-            
-            var densStyle = new DASStyle();
-            densStyle.glyph = 'HISTOGRAM';
-            densStyle.COLOR1 = 'black';
-            densStyle.COLOR2 = 'red';
-            densStyle.HEIGHT=30;
-            thisTier.stylesheet.pushStyle({type: 'default'}, null, densStyle);
-            
-            thisTier.browser.refreshTier(thisTier);
         }
     } else if (this.dasSource.tier_type == 'sequence') {
         if (this.dasSource.twoBitURI) {
@@ -209,10 +191,7 @@ DasTier.prototype.toString = function() {
 DasTier.prototype.init = function() {
     var tier = this;
 
-    if (tier.dasSource.style) {
-        this.stylesheet = {styles: tier.dasSource.style};
-        this.browser.refreshTier(this);
-    } else if (tier.dasSource.uri || tier.dasSource.stylesheet_uri) {
+    if (tier.dasSource.uri || tier.dasSource.stylesheet_uri) {
         tier.status = 'Fetching stylesheet';
         this.dasSource.stylesheet(function(stylesheet) {
             tier.stylesheet = stylesheet;
@@ -290,7 +269,6 @@ DasTier.prototype.needsSequence = function(scale ) {
     if (this.dasSource.tier_type === 'sequence' && scale < 5) {
         return true;
     } else if ((this.dasSource.bamURI || this.dasSource.bamBlob) && scale < 20) {
-        dlog('reqSeq');
         return true
     }
     return false;
@@ -317,13 +295,9 @@ DasTier.prototype.updateStatus = function(status) {
         this.currentFeatures = [];
         this.currentSequence = null;
         this.error = status;
-        this.placardContent.innerText = status;
-        this.placard.style.display = 'block';
-        this.holder.style.display = 'none';
-    } else {
-        this.placard.style.display = 'none';
-        this.holder.style.display = 'block';
     }
+    this.setBackground();
+    this.draw();
 }
 
 DasTier.prototype.draw = function() {
@@ -334,7 +308,6 @@ DasTier.prototype.draw = function() {
     } else {
         drawFeatureTier(this);
     }
-    this.paint();
     this.originHaxx = 0;
     this.browser.arrangeTiers();
 }
@@ -353,14 +326,13 @@ function zoomForScale(scale) {
 
 
 DasTier.prototype.setBackground = function() {            
-    /*
 //    if (this.knownStart) {
 
     var ks = this.knownStart || -100000000;
     var ke = this.knownEnd || -100000001;
         this.background.setAttribute('x', (ks - this.browser.origin) * this.browser.scale);
         this.background.setAttribute('width', (ke - this.knownStart + 1) * this.browser.scale);
-//    }    */
+//    }    
 }
 
 DasTier.prototype.sourceFindNextFeature = function(chr, pos, dir, callback) {
@@ -420,14 +392,4 @@ DasTier.prototype.findNextFeature = function(chr, pos, dir, fedge, callback) {
     }
 //    dlog('delegating to source: ' + pos);
     this.sourceFindNextFeature(chr, pos, dir, callback);
-}
-
-
-DasTier.prototype.updateLabel = function() {
-   this.bumpButton.className = this.bumped ? 'icon-minus-sign' : 'icon-plus-sign';
-   if (this.dasSource.collapseSuperGroups) {
-        this.bumpButton.style.display = 'inline-block';
-    } else {
-        this.bumpButton.style.display = 'none';
-    }
 }

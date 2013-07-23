@@ -1,30 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09db9046-bdc5-4781-aab4-277ad5ce9a07" name="Default" comment="changes for publishing the plugin to the remote repo">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DalliancePluginGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/DalliancePluginGrailsPlugin.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="09db9046-bdc5-4781-aab4-277ad5ce9a07" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/browser-ui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/cbrowser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/color.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/feature-draw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/feature-popup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/features.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/glyphs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/sequence-draw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/session.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/js/svg-export.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/dalliance/plugin/DallianceController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/dalliance/plugin/DallianceController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/TODO.md" afterPath="$PROJECT_DIR$/web-app/TODO.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/bamtest.html" afterPath="$PROJECT_DIR$/web-app/bamtest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/bigwig.js" afterPath="$PROJECT_DIR$/web-app/js/bigwig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/bin.js" afterPath="$PROJECT_DIR$/web-app/js/bin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/build.sh" afterPath="$PROJECT_DIR$/web-app/build.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/dalliance.js" afterPath="$PROJECT_DIR$/web-app/dalliance.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/das.js" afterPath="$PROJECT_DIR$/web-app/js/das.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/domui.js" afterPath="$PROJECT_DIR$/web-app/js/domui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/kspace.js" afterPath="$PROJECT_DIR$/web-app/js/kspace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/package.js" afterPath="$PROJECT_DIR$/web-app/package.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/release.html" afterPath="$PROJECT_DIR$/web-app/release.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/test.html" afterPath="$PROJECT_DIR$/web-app/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/test2m.html" afterPath="$PROJECT_DIR$/web-app/test2m.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/tier.js" afterPath="$PROJECT_DIR$/web-app/js/tier.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/track-adder.js" afterPath="$PROJECT_DIR$/web-app/js/track-adder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/version.js" afterPath="$PROJECT_DIR$/web-app/js/version.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dalliance-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/DallianceController.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373534198249" ignored="false" />
+    <file path="/DallianceController.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374584720465" ignored="false" />
     <file path="/main.gsp" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373983137066" ignored="false" />
-    <file path="$PROJECT_DIR$/../transmartApp/web-app/js/datasetExplorer/datasetExplorer.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373987091393" ignored="false" />
-    <file path="/datasetExplorer.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373618442351" ignored="false" />
-    <file path="$PROJECT_DIR$/../transmartApp/grails-app/conf/BuildConfig.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374230710545" ignored="false" />
+    <file path="$PROJECT_DIR$/../transmartApp/web-app/js/datasetExplorer/datasetExplorer.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374585071960" ignored="false" />
+    <file path="/datasetExplorer.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374568721354" ignored="false" />
+    <file path="$PROJECT_DIR$/../transmartApp/grails-app/conf/BuildConfig.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374481114768" ignored="false" />
     <file path="/dalliance.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373975529336" ignored="false" />
     <file path="/test.html" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373615453415" ignored="false" />
     <file path="/browser-ui.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373549234740" ignored="false" />
-    <file path="/a.dummy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374227234456" ignored="false" />
-    <file path="$PROJECT_DIR$/../transmartApp/web-app/js/utils/dynamicLoad.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373557826403" ignored="false" />
+    <file path="/a.dummy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374584288463" ignored="false" />
+    <file path="$PROJECT_DIR$/../transmartApp/web-app/js/utils/dynamicLoad.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374242724591" ignored="false" />
     <file path="/dynamicLoad.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373557821089" ignored="false" />
-    <file path="$PROJECT_DIR$/../transmartApp/grails-app/views/datasetExplorer/datasetExplorer.gsp" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373554772406" ignored="false" />
-    <file path="/datasetExplorer.gsp" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373554771018" ignored="false" />
+    <file path="$PROJECT_DIR$/../transmartApp/grails-app/views/datasetExplorer/datasetExplorer.gsp" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374242724591" ignored="false" />
+    <file path="/datasetExplorer.gsp" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374239019206" ignored="false" />
     <file path="/cbrowser.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373976955854" ignored="false" />
     <file path="$PROJECT_DIR$/../jbrowse-plugin/grails-app/controllers/jbrowse/plugin/JBrowseController.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373983337735" ignored="false" />
     <file path="$PROJECT_DIR$/../jbrowse-plugin/web-app/jbrowse.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374070347668" ignored="false" />
@@ -46,7 +68,7 @@
     <file path="$PROJECT_DIR$/../HelloGrails/grails-app/views/layouts/main.gsp" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373970807007" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloGrails/grails-app/conf/Config.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373969524241" ignored="false" />
     <file path="/das.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373977448920" ignored="false" />
-    <file path="/Dummy.txt" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374231091483" ignored="false" />
+    <file path="/Dummy.txt" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374574555080" ignored="false" />
     <file path="$PROJECT_DIR$/../Rmodules/grails-app/controllers/com/recomdata/transmart/data/association/DataAssociationController.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373987264441" ignored="false" />
     <file path="$PROJECT_DIR$/../transmartApp/grails-app/controllers/ChartController.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373987303316" ignored="false" />
     <file path="/README.md" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1373989049708" ignored="false" />
@@ -234,11 +256,131 @@
     <file path="$PROJECT_DIR$/../jbrowse-plugin/web-app/extlib/lib/perl5/Bio/Ontology/RelationshipFactory.pm" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374142965490" ignored="false" />
     <file path="$PROJECT_DIR$/../jbrowse-plugin/web-app/docs/examples/config/yeast_genbank.json" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374142965490" ignored="false" />
     <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/org/biojava/MyPlugin.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374159092104" ignored="false" />
-    <file path="/MyPlugin.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374158482910" ignored="false" />
-    <file path="$PROJECT_DIR$/../dazzle/dazzle-webapp/dazzlecfg.xml" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374225331844" ignored="false" />
-    <file path="/fragment.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374225330978" ignored="false" />
-    <file path="$PROJECT_DIR$/../dazzle/src/org/dazzle/MyPlugin.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374159669080" ignored="false" />
-    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/MyPlugin.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374225331844" ignored="false" />
+    <file path="/MyPlugin.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374499527511" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/dazzle-webapp/dazzlecfg.xml" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374511750575" ignored="false" />
+    <file path="/fragment.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374511677641" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/dazzle/MyPlugin.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374511351574" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/MyPlugin.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374512203503" ignored="false" />
+    <file path="/BuildConfig.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374231294187" ignored="false" />
+    <file path="$PROJECT_DIR$/../transmartApp/grails-app/controllers/AnalysisController.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374235678528" ignored="false" />
+    <file path="$PROJECT_DIR$/../transmartApp/web-app/js/utils/json2.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374242724591" ignored="false" />
+    <file path="$PROJECT_DIR$/../transmartApp/grails-app/controllers/PluginDetectorController.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374242724591" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/AbstractGFFFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/pom.xml" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374510798901" ignored="false" />
+    <file path="/pom.xml" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374510756635" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/test/java/org/biodazzle/servlets/dazzle.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502659522" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/docs/deploy.html" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071960" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/FeaturesHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/DazzleServlet.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502926162" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/DazzleException.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/StructureHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/LinkHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/AbstractDazzleHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/EntryPointsHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/DazzleResponse.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/InteractionHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/DASQueryStringTranslator.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/Segment.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/SangerProxyFilter.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/AlignmentHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/DASStatus.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924780" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/DazzleHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/HydraGFFFeaturesHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/StylesheetHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/GFFFeaturesHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/DazzleTools.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/MyPlugin.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/SequenceHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/DASGFFGroup.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/AbstractDazzleDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/GFFFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/AbstractGFFFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/InteractionReferenceSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/DazzleDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/TypeMetadataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/ProxyDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/PhobiusExampleSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/dazzle-webapp/WEB-INF/web.xml" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/EmblDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/AbstractBiojavaFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/SIFReferenceSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924781" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/AlignmentTools.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/GFFAnnotationSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/GFFFeature.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/BioSQLDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/ProxyReferenceSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/StructureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/TilingFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/AlignmentSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/FastaDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/DataSourceException.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/DazzleInstallation.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/LdasDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/UniProtDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/BiojavaFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/DazzleReferenceSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/HydraGFFFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/BasicDazzleInstallation.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/AbstractDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/db/GFFFeatureCache.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502924782" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/main/java/org/biojava/servlets/dazzle/datasource/db/MysqlFeatureCache.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374502926162" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/FeaturesHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071961" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/DazzleServlet.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/DazzleException.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071964" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/StructureHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/LinkHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/AbstractDazzleHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/EntryPointsHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/DazzleResponse.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/InteractionHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/DASQueryStringTranslator.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/Segment.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/SangerProxyFilter.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/AlignmentHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/DASStatus.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/DazzleHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/HydraGFFFeaturesHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/StylesheetHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/GFFFeaturesHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071967" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/DazzleTools.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/SequenceHandler.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/DASGFFGroup.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/AbstractDazzleDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/GFFFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/InteractionReferenceSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/DazzleDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071967" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/TypeMetadataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/ProxyDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071967" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/PhobiusExampleSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071965" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/EmblDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071967" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/AbstractBiojavaFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/SIFReferenceSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/AlignmentTools.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/GFFAnnotationSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/GFFFeature.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/BioSQLDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/ProxyReferenceSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/StructureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/TilingFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/AlignmentSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/FastaDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071967" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/DataSourceException.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/DazzleInstallation.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/LdasDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071967" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/UniProtDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071967" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/BiojavaFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/DazzleReferenceSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/HydraGFFFeatureSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/BasicDazzleInstallation.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/AbstractDataSource.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/db/GFFFeatureCache.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071966" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/src/org/biojava/servlets/dazzle/datasource/db/MysqlFeatureCache.java" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503071967" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/build.xml" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374503681975" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/jars/biojava/biojava/1.0/biojava-1.0.pom" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374509891197" ignored="false" />
+    <file path="$PROJECT_DIR$/../dazzle/jars/biojava/biojava/maven-metadata-local.xml" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374509891197" ignored="false" />
+    <file path="/dazzlecfg.xml" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374511729729" ignored="false" />
+    <file path="/browser.js" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374569120970" ignored="false" />
+    <file path="$PROJECT_DIR$/../Rmodules/grails-app/controllers/com/recomdata/transmart/data/association/aCGHgroupTestController.groovy" changelist="09db9046-bdc5-4781-aab4-277ad5ce9a07" time="1374577372271" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +395,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -290,6 +431,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -299,11 +441,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DallianceController.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DallianceController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/dalliance/plugin/DallianceController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="94" selection-start="719" selection-end="719" vertical-scroll-proportion="-11.73913">
-              <folding />
+            <state line="5" column="113" selection-start="161" selection-end="161" vertical-scroll-proportion="0.13368984">
+              <folding>
+                <element signature="e#26#78#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tier.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/js/tier.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="221" column="43" selection-start="8634" selection-end="8634" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="browser.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/js/browser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="82" selection-start="2198" selection-end="2198" vertical-scroll-proportion="-14.076923">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -311,16 +477,48 @@
       <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/dalliance/main.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="29" selection-start="159" selection-end="159" vertical-scroll-proportion="-1.2765957">
+            <state line="0" column="18" selection-start="9" selection-end="18" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="browser-ui.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/js/browser-ui.js">
+      <file leaf-file-name="thub.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/js/thub.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="43" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0">
+            <state line="8" column="60" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DalliancePluginGrailsPlugin.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DalliancePluginGrailsPlugin.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="42" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/README.md">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="17" selection-start="795" selection-end="795" vertical-scroll-proportion="-0.5555556">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="164" selection-start="2040" selection-end="2040" vertical-scroll-proportion="3.75">
               <folding />
             </state>
           </provider>
@@ -329,34 +527,7 @@
       <file leaf-file-name="dalliance.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/dalliance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="46" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="89" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cbrowser.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/js/cbrowser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="115" selection-start="2229" selection-end="2229" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="das.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/js/das.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="628" column="70" selection-start="20842" selection-end="20842" vertical-scroll-proportion="0.0">
+            <state line="37" column="83" selection-start="945" selection-end="945" vertical-scroll-proportion="-14.461538">
               <folding />
             </state>
           </provider>
@@ -365,16 +536,7 @@
       <file leaf-file-name="application.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="89" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="36" selection-start="1886" selection-end="1886" vertical-scroll-proportion="1.1081082">
+            <state line="4" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -399,16 +561,18 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/web-app/test.html" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/dalliance/plugin/DallianceController.groovy" />
         <option value="$PROJECT_DIR$/web-app/js/cbrowser.js" />
         <option value="$PROJECT_DIR$/web-app/js/das.js" />
         <option value="$PROJECT_DIR$/web-app/js/browser-ui.js" />
-        <option value="$PROJECT_DIR$/web-app/dalliance.js" />
         <option value="$PROJECT_DIR$/grails-app/views/dalliance/main.gsp" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/DalliancePluginGrailsPlugin.groovy" />
         <option value="$PROJECT_DIR$/application.properties" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
+        <option value="$PROJECT_DIR$/web-app/dalliance.js" />
+        <option value="$PROJECT_DIR$/web-app/js/thub.js" />
+        <option value="$PROJECT_DIR$/web-app/js/browser.js" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/dalliance/plugin/DallianceController.groovy" />
       </list>
     </option>
   </component>
@@ -444,116 +608,11 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dalliance-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,9 +629,10 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -580,6 +640,12 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -589,18 +655,25 @@
       <setting name="debug" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -629,19 +702,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -718,7 +778,15 @@
       <created>1374231108922</created>
       <updated>1374231108922</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changes for publishing the plugin to the remote repo">
+      <created>1374231127038</created>
+      <updated>1374231127038</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Remove dependency on Java version of JSON parser">
+      <created>1374241160710</created>
+      <updated>1374241160710</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -733,13 +801,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47272727" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47272727" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289256" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -747,12 +813,14 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979952" sideWeight="0.5272727" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979952" sideWeight="0.5272727" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289256" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -798,7 +866,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add org.json dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove dependency on Java version of JSON parser" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -813,8 +881,9 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="init readme file" />
-    <MESSAGE value="changes for publishing the plugin to the remote repo" />
     <MESSAGE value="add org.json dependencies" />
+    <MESSAGE value="changes for publishing the plugin to the remote repo" />
+    <MESSAGE value="Remove dependency on Java version of JSON parser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -833,92 +902,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="45" selection-start="966" selection-end="966" vertical-scroll-proportion="0.27918783">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="5" selection-start="2040" selection-end="5506" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/dalliance/main.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="159" selection-end="159" vertical-scroll-proportion="-1.2765957">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/js/browser-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="43" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/dalliance.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="46" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="45" selection-start="966" selection-end="966" vertical-scroll-proportion="0.27918783" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="89" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/js/cbrowser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="115" selection-start="2229" selection-end="2229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="89" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/js/das.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="628" column="70" selection-start="20842" selection-end="20842" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/org/json/CDL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DalliancePluginGrailsPlugin.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="37" selection-start="94" selection-end="94" vertical-scroll-proportion="-1.1538461">
+        <state line="601" column="35" selection-start="19885" selection-end="19885" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="89" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/dalliance/plugin/DallianceController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="94" selection-start="719" selection-end="719" vertical-scroll-proportion="-11.73913">
+        <state line="4" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -930,10 +931,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/README.md">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="795" selection-end="795" vertical-scroll-proportion="-0.5555556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="36" selection-start="1886" selection-end="1886" vertical-scroll-proportion="1.1081082">
+        <state line="18" column="53" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/thub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="60" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/dalliance/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="18" selection-start="9" selection-end="18" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/browser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="82" selection-start="2198" selection-end="2198" vertical-scroll-proportion="-14.076923">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/tier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="43" selection-start="8634" selection-end="8634" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/dalliance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="83" selection-start="945" selection-end="945" vertical-scroll-proportion="-14.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="164" selection-start="2040" selection-end="2040" vertical-scroll-proportion="3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DalliancePluginGrailsPlugin.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/dalliance/plugin/DallianceController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="113" selection-start="161" selection-end="161" vertical-scroll-proportion="0.13368984">
+          <folding>
+            <element signature="e#26#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
